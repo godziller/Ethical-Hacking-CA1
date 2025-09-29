@@ -1,0 +1,9 @@
+[package]
+name = "authentication"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rpassword = "7"
+bcrypt = "0.12"
+rusqlite = { version = "0.31", features = ["bundled"] }
