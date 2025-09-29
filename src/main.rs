@@ -9,7 +9,7 @@ mod db;
 
 fn login(conn: &Connection, user: &str, pin: &str) -> bool {
     println!("attempting login");
-    match db::get_hash_for_user(conn, user){
+    match db::get_hash_for_user(conn, user, pin){
         Ok(Some(stored_hash)) => match verify(pin, &stored_hash){
             Ok(true) => true,
             _ => false,
