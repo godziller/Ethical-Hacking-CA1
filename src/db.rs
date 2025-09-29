@@ -4,7 +4,7 @@ use bcrypt::{hash, verify, DEFAULT_COST};
 use rusqlite::{params, Connection, OptionalExtension};
 
 const DEFAULT_USER: &str = "utz";
-const DEFAULT_PIN: &str = "1234";
+const DEFAULT_PIN: &str = "0001";
 
 pub fn init_db(db_path: &str) -> Result<Connection, Box<dyn Error>> {
     let conn = Connection::open(db_path)?;

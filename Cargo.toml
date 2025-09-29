@@ -7,3 +7,4 @@ edition = "2024"
 rpassword = "7"
 bcrypt = "0.12"
 rusqlite = { version = "0.31", features = ["bundled"] }
+chrono = "0.4"
